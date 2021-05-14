@@ -69,17 +69,6 @@
     background: rgb(2, 111, 138);
 }
 
-.form .message {
-    font-size: 12px;
-    margin: 5px 0 0;
-    color: white;
-}
-
-.form .message a {
-    color: rgb(143, 187, 231);
-    text-decoration: none;
-}
-
 .form .register-form {
     display: none;
 }
