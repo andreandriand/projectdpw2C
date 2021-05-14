@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(bg.jpg);
+            background-size: cover;
+        }
+        
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #225f99;
+            overflow-x: hidden;
+        }
+        
+        .sidenav strong{
+            color: white;
+            padding: 16px;
+            text-decoration: none;
+            display: block;
+            font-size: x-large;
+        }
+        
+        .sidenav a {
+            color: white;
+            padding: 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .sidenav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            margin-left: 15%;
+            margin-top: 20%;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: x-large;
+            color: blanchedalmond;
+        }
+
+        .active{
+            background-color: turquoise;
+        }
+        .container{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                padding: 80px 25px 120px 25px;
+                width: 500px;
+                background-color: rgba(0,0,0,.7);
+                box-shadow: 0 0 10px whitesmoke;
+            }
+            .container h1{
+                text-align: center;
+                color: whitesmoke;
+                border-bottom: 4px solid blue;
+                margin-top: -50px;
+            }
+            .container form{
+                height: 180px;
+                padding-top: 20px;
+            }
+            .container label{
+                float: left;
+                color: rgb(107, 178, 236);
+                margin-bottom: 20px;
+            }
+            .container form input{
+                font-size: 20px;
+                width: calc(100% - 20px);
+                padding: 8px 10px;
+                border: none;
+                background-color: transparent;
+                border-bottom: 2px solid blue;
+                color: whitesmoke;
+                margin-bottom: 20px;
+            }
+            .container form button{
+                font-size: 18px;
+                width: 100%;
+                padding: 7px 0;
+                border: none;
+                background-color:blue;
+                color: white;
+            }
+            .container form button:hover{
+                background-color:rgb(10, 10, 87);
+            }
+    </style>
+</head>
+<body>
+    <div class="sidenav">
+        <a href="main.html"><strong>Welcome</strong></a>
+        <a href="main-login.html" class="active">Login</a>
+        <a href="#">Register</a>
+        <a href="about.html">About Us</a>
+    </div>
+      
+    <div class="content">
+        <div class="container">
+            <h1>LOGIN</h1>
+            <form action=""> 
+                <label>Username / Email :</label><br>
+                <input type="text"><br>
+                <label>Password :</label><br>
+                <input type="password"><br>
+                <button>Log in</button>
+            </form>
+        </div>
+    </div>
+      
+</body>
+</html>
